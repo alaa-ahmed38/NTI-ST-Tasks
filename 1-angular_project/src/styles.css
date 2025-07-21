@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+/* تطبيق الخلفية المتدرجة على الناف بار */
+/* .navbar-gradient {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+} */
+ 
+/* src/styles.css */
+
+.navbar-pink-purple {
+  /* A softer, more "dreamy" gradient */
+  background: linear-gradient(to right, #2f0a36, #9733ee);
+}
+
+
+
+
+
+/*
+  1. تعريف التدرج اللوني لرأس البطاقة
+  هذا الكلاس يطبق نفس التدرج الذي اخترتيه للناف بار
+*/
+.card-header-gradient {
+  background: linear-gradient(to right, #2f0a36, #1e0038);
+}
+.card-body{
+
+  /* margin: auto 0; */
+  /* padding: auto 0; */
+}
+
+/*
+  2. تنسيق البطاقة المخصص (أطول، وأكثر انحناءً)
+*/.card-text{
+  /* overflow-y: scroll; */
+}
+.custom-post-card {
+  /* 
+    ★★★ هذا هو طلبك: انحناء بنسبة 10% ★★★
+    سيجعل شكل البطاقة بيضاويًا بعض الشيء.
+  */
+  border-radius: 10% !important; 
+   background: #eeee;
+   
+  /* 
+    ★★★ هذا يجعل البطاقة أطول ★★★
+    يمكنك زيادة أو تقليل هذه القيمة حسب رغبتك.
+  */
+  min-height: 200px;
+
+  /* 
+    مهم جدًا: هذا الكود يضمن أن المحتوى (مثل رأس البطاقة) 
+    لن يخرج عن الأطراف المنحنية للبطاقة.
+  */
+  overflow: hidden;
+}

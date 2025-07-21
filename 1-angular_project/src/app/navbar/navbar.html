@@ -1,0 +1,30 @@
+<!-- 
+  ★★★ التغييرات الرئيسية ★★★
+  - حذفنا كلاسات الألوان مثل "bg-dark".
+  - أضفنا كلاسًا جديدًا ومخصصًا باسم "navbar-pink-purple".
+  - أبقينا على "navbar-dark" لأن التدرج سيكون داكنًا، وبالتالي نحتاج إلى نص أبيض.
+-->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm navbar-pink-purple">
+
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <strong>our sight</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/posts" routerLinkActive="active">posts</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a href="#" class="nav-link text-white">sign in</a>
+      </div>
+    </div>
+  </div>
+</nav>
